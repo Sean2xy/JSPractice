@@ -1,0 +1,8 @@
+HTML -> nouns
+CSS -> adjectives
+JS -> verbs
+
+hover 悬停
+
+ES6 - 2015 modern JavaScript
+
