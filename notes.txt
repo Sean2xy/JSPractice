@@ -1,3 +1,5 @@
+DAY 1:
+
 HTML -> nouns
 CSS -> adjectives
 JS -> verbs
@@ -6,3 +8,17 @@ hover 悬停
 
 ES6 - 2015 modern JavaScript
 
+camelCase -> firstLowerSecondUpperCase
+
+Seven primitive data type: Number, String, Boolean, Undefined, Null, Symbol, BigInt
+
+dynamic typing,value has type while variable not
+
+let can be reassigned, while const can not be changed and const must be initalizied
+
+// using const by default
+
+template literal to simplify the string
+
+// always use === by default
+// === does not perform type coreation but == does
