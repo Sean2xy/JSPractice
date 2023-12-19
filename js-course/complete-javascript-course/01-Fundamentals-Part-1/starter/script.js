@@ -168,26 +168,96 @@
 // }else{
 //     console.log('undefined');
 // }
-
-const age = '18';
+//
+// const age = '18';
 // always use === by default
-// === does not perform type coreation but == does
-if(age === 18) console.log('you are an adult');
+// // === does not perform type coreation but == does
+// if(age === 18) console.log('you are an adult');
+//
+// if(age == 18) console.log('you are an adult');
+//
+// const fav = Number(prompt("what's your favourite"));
+// console.log(fav);
+// console.log(typeof fav);
+//
+// if(fav===99){
+//     console.log(`you are awesome`);
+// }else if(fav===7){
+//     console.log(`you are also awesome`);
+// }else{
+//     console.log('you suck');
+// }
+//
+// if(fav!==99){
+//     console.log('should be 99');
+// }
 
-if(age == 18) console.log('you are an adult');
+// const hasEnglish = true;
+// const hasTech = true;
+// const hasLuck = true;
+// console.log(hasEnglish && hasTech);
+// console.log(hasEnglish || hasTech);
+// console.log(!hasEnglish);
+//
+// const onboard = hasEnglish && hasTech && hasLuck;
+// if(onboard){
+//     console.log(`Keep going and work hard`);
+// }else{
+//     console.log('you are the best');
+// }
 
-const fav = Number(prompt("what's your favourite"));
-console.log(fav);
-console.log(typeof fav);
+// code chanllenge 3
+// const avgDolpScore = (96+108+89) / 3;
+// const avgKoalsScore = (88+91+110) / 3;
+//
+// if(avgDolpScore > avgDolpScore && avgDolpScore>=100){
+//     console.log('Dolh win');
+// }else if(avgDolpScore===avgKoalsScore && (avgDolpScore>=100 && avgKoalsScore>=100)){
+//     console.log('draw');
+// }else if(avgKoalsScore > avgDolpScore && avgKoalsScore>=100){
+//     console.log('koal win')
+// }else{
+//     console.log('no one wins');
+// }
 
-if(fav===99){
-    console.log(`you are awesome`);
-}else if(fav===7){
-    console.log(`you are also awesome`);
-}else{
-    console.log('you suck');
-}
+// switch
 
-if(fav!==99){
-    console.log('should be 99');
-}
+// const day = 'monday';
+//
+// switch (day){
+//     // using strict equal
+//     // day === monday
+//     case "monday":
+//         console.log('happy monday');
+//         break;
+//     case 'tuesday':
+//     case 'wednesday':
+//         console.log('aaa');
+//         console.log('eat teco');
+//         break;
+//     case 'thrusday':
+//         console.log('hhh');
+//     default:
+//         console.log('not a valid day');
+// }
+//
+// if(day==='monday'){
+//
+// }else if(day==='tuesday' || day==='wednesday'){
+//     console.log('aaa');
+//     console.log('eat teco');
+// }else{
+//
+// }
+// conditional operator
+// const age = 23;
+// const canDrink = age >= 18 ?console.log(`drink!`):console.log('no permitted');
+// console.log(canDrink);// undefined
+// // ternary operator used for takes a quick decision
+// console.log(`I like to drink ${age>=18?'wine':'water'}`);
+
+const bill = 275;
+const percent = (bill>=50 && bill<=300)?0.15:0.2;
+const tip = bill * percent;
+console.log(tip);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${tip+bill}`);

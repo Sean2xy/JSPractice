@@ -20,5 +20,11 @@ let can be reassigned, while const can not be changed and const must be initaliz
 
 template literal to simplify the string
 
+Day 2:
 // always use === by default
 // === does not perform type coreation but == does
+// expression && statement
+// expression produces value, while statment is like a full sentence such as if statement
+// function makes dry code,reusable,maintainable
+
+
