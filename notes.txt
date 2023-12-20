@@ -31,3 +31,18 @@ Day 3:
 operator precedence -》. member access > computed member access []
 for loop using let because it will update
 array is a type of object
+
+solving problem :
+Stay clam and be logical
+1: Ask the right question to get a clear pic about problem
+2: Divide and conquer, break into small sub-problems
+3: Research: Google, github issues
+4: write psedudo code for bigger problems
+
+Always be passion and curiosity about how everything works
+bugs: identify -> find -> fix > prevent
+debugger google chrome
+
+!Tab
+html -> class id attribute element, id has to be unique
+mostly use class
