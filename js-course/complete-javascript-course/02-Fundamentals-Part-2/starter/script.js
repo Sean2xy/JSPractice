@@ -167,13 +167,188 @@
 
 //object
 // order of properties does not matter
-const sean = {
-    firstName: 'sean',
-    age:2027-2011,
-    job:'coder',
-    firends:['se','a','n']
-};
-console.log(sean);
-console.log(sean.firstName);
-console.log(sean['firstName']);
+// const sean = {
+//     firstName: 'sean',
+//     lastName:'zhu',
+//     age:2027-2011,
+//     job:'coder',
+//     firends:['se','a','n']
+// };
+// console.log(sean);
+// console.log(sean.firstName);
+// //put expression
+// console.log(sean['firstName']);
+// const nameKey = 'Name';
+// console.log(sean['first'+nameKey]);
+// console.log(sean['last'+nameKey]);
+//
+// // const age = prompt('what do you wanna know');
+// // if(age){
+// //     console.log(sean[age]);
+// //     console.log(sean.age);
+// // }else{
+// //     console.log('no');
+// // }
+// sean.location = 'dublin';
+// sean['ig']='zz';
+//
+// // sean has 3 friends, best friend is n
+// console.log(`${sean.firstName} has ${sean.firends.length} friends, and his best firends is ${sean.firends[2]}`);
 
+// function is also a type of value
+// const sean = {
+//     firstName: 'sean',
+//     lastName:'zhu',
+//     birthYear:1991,
+//     job:'coder',
+//     firends:['se','a','n'],
+//     hasDriver: true,
+//
+//     // calAge: function (birthYear) {
+//     //     return 2037-birthYear
+//     // }
+//     // calAge: function (){
+//     //     return 2037-this.birthYear;
+//     // }
+//     // can not use arrow function because this keyword
+//     calAge:function () {
+//         this.age = 2037-this.birthYear;
+//         return this.age;
+//     },
+//
+//     getSummary:function () {
+//         return `${this.firstName} is a ${this.calAge()}
+//         years old ${this.job}, and he has
+//         ${this.hasDriver?'a':'no'} driver license`;
+//     }
+//
+// };
+//
+// console.log(sean.calAge());
+// console.log(sean['calAge']());
+// console.log(sean.age);
+// console.log(sean.getSummary());
+
+// code challenge 3
+// const mark = {
+//     fullName : 'Marlk Miller',
+//     mass:78,
+//     height:1.69,
+//
+//     calcBMI: function () {
+//         this.BMI = this.mass / (this.height * this.height);
+//         return this.BMI;
+//     }
+// }
+//
+// const john = {
+//     fullName : 'John Smith',
+//     mass:92,
+//     height:1.95,
+//
+//     calcBMI: function () {
+//         this.BMI = this.mass / (this.height * this.height);
+//         return this.BMI;
+//     }
+// }
+//
+// console.log(`${john.fullName}'s${john.calcBMI()} is lower than ${mark.fullName}'s${mark.calcBMI()}!`);
+
+// for(let i=1;i<=10;i++){
+//     console.log(`lift do ${i}`);
+// }
+
+// const seanArray = [
+//     'sean',
+//     'zhu',
+//     2037-2031,
+//     'teacher',
+//     ['ss','z','xx']
+// ];
+// const newArray = new Array(seanArray.length);
+// const newArray = [];
+// for (let i=0;i<seanArray.length;i++){
+//     console.log(seanArray[i], typeof seanArray[i]);
+//
+//     // one way
+//     newArray[i]=typeof seanArray[i];
+//     // console.log(newArray[i]);
+//     // newArray.push(typeof seanArray[i]);
+// }
+// console.log(newArray);
+//
+// const years=[1991,2002,2015,2035];
+// const ages=[];
+// for(let i=0;i<years.length;i++){
+//     ages[i]=2037-years[i];
+// }
+// console.log(ages);
+
+// continue and break
+// for(let i=1;i<=10;i++){
+//     // if(i!==5) continue;
+//     // omit when i!==5
+//     if(i===5) break;
+//     console.log(`lift do ${i}`);
+// }
+
+// loop with loop and backwards loop
+const seanArray = [
+    'sean',
+    'zhu',
+    2037-2031,
+    'teacher',
+    ['ss','z','xx']
+];
+
+// for(let i = seanArray.length-1;i>=0;i--){
+//     console.log(seanArray[i]);
+// }
+//
+// for(let e = 1;e<=3;e++){
+//     console.log(`exercise ${e}`);
+//     for(let rep=1;rep<=5;rep++){
+//         console.log(`${e}: lift do ${rep}`);
+//     }
+// }
+
+// let i = 1;
+// while(i<=10){
+//     console.log(`${i} times`);
+//     i++;
+// }
+
+// while loop used for no counter used
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while(dice!==6){
+//     console.log(`you rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if(dice===6) console.log('loop is end');
+// }
+
+const bills = [22,295,176,440,37,105,10,1100,86,52]
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+    const percent = (bill>=50 && bill<=300)?0.15:0.2;
+    const tip = bill * percent;
+    console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${tip+bill}`);
+    return tip;
+}
+
+for(let i =0;i<bills.length;i++){
+    tips[i] = calcTip(bills[i]);
+    totals[i] = tips[i] + bills[i];
+}
+console.log(tips);
+console.log(totals);
+
+const calcAvg = (arr) =>{
+    let sum = 0;
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+    }
+    return sum/arr.length;
+}
+console.log(calcAvg(totals));

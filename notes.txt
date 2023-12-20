@@ -27,4 +27,7 @@ Day 2:
 // expression produces value, while statment is like a full sentence such as if statement
 // function makes dry code,reusable,maintainable
 
-
+Day 3:
+operator precedence -》. member access > computed member access []
+for loop using let because it will update
+array is a type of object
