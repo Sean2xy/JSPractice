@@ -22,3 +22,11 @@ for(let i=0;i<modalsOpen.length;i++){
 closedModals.addEventListener('click',closedModal);
 overLay.addEventListener('click',closedModal);
 
+// keyboard events -> global event
+document.addEventListener('keydown',function(e) {
+  console.log(e);
+  if(e.key==='Escape' && !modal.classList.contains('hidden')) {
+    closedModal();
+  }
+})
+
