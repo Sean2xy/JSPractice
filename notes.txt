@@ -46,3 +46,16 @@ debugger google chrome
 !Tab
 html -> class id attribute element, id has to be unique
 mostly use class
+// form is more meaning ful than div because seo
+using the most appropriate html element is the meaning of semantic html
+
+Day4:
+Css中 # ID 和 . class
+Css box = content,padding,border,margin and fill area
+
+Dom has head and body, special object that is the entry point to the DOM
+Dom methods are part of web apis, can interact with JS
+add event listener this function will be called as soon as the event happens
+
+refactor code using function and 三元组
+避免重复相同行的代码的时候，消除冗余的代码
