@@ -88,4 +88,9 @@ TDZ makes it easier to avoid and catch errors
 this keyword for every execution context, takes the
 value of points to the owner of the function in which the this
 keyword is used
-arrow function does not have this keywordd
+arrow function does not have this keyword
+
+const is immutable only for primitive types data
+primitive type are stored in the call stack, with address and value
+object type are stored in the call stack and heap, value has a reference to the memory address in heap
+

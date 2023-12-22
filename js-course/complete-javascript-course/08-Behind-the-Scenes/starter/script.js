@@ -93,3 +93,61 @@ const add3 = (a,b)=>{
 //
 // const f = hhh.calAge;
 // f();
+//
+// const sean = {
+//   year:22,
+//   calAge:function() {
+//     console.log(2037-this.year);
+//
+//     // const isM=()=>{
+//     //   console.log(this.year);
+//     // };
+//     // isM();
+//
+//     const self = this;
+//     const isM = function() {
+//       // console.log(this.year);// will not work
+//       console.log(self.year);
+//     };
+//     isM();
+//   }
+// };
+//
+// sean.calAge();
+
+// const add2 = function(a,b) {
+//   console.log(arguments);
+//   return a+b;
+// }
+// add2(2,5,8,10);
+//
+// const sean = {
+//   age:27,
+//   job:'coder',
+// };
+//
+// const me = sean;
+// me.age=18;
+// console.log(me);
+// console.log(sean);
+
+const add2 = function(a,b) {
+  console.log(arguments);
+  return a+b;
+}
+add2(2,5,8,10);
+
+const sean = {
+  age:27,
+  job:'coder',
+  friends:['alice','bob'],
+};
+const me = Object.assign({},sean);//object insides a object is not work, a shadow copy which only copies the properties
+// deep copy can work
+// const me = sean;
+me.age=18;
+
+me.friends.push('zz');
+
+console.log(me);
+console.log(sean);
