@@ -59,3 +59,33 @@ add event listener this function will be called as soon as the event happens
 
 refactor code using function and 三元组
 避免重复相同行的代码的时候，消除冗余的代码
+
+day5:
+garbage collection between low level programming langugage like C
+high level programming langugage like JS
+first class function: functions are treated as variables
+JS runs in one single thread
+Just in time compilation
+One global execution context -> default context,
+Execution context = environment in which a piece of js code is executed
+has variable env ,scope chain and this keyword
+execution contexts are used in call stack
+
+lexcial scope: scope is controlled by the placement of the function
+
+only let and const has block scope
+
+scope chain -> inner ,outer, global
+only upwards, not for sibling
+
+scope chain order in which functions are written in the code,
+does not influenced by the function call order
+
+let and const can not be hosited, are block scope and TDZ
+function expressions and arrows are depent on using var or let/const
+TDZ makes it easier to avoid and catch errors
+
+this keyword for every execution context, takes the
+value of points to the owner of the function in which the this
+keyword is used
+arrow function does not have this keywordd
