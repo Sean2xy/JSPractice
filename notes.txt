@@ -97,3 +97,9 @@ object type are stored in the call stack and heap, value has a reference to the 
 day 6:
 for of loop
 using optional chaining ?. with ?? nullish
+
+Sources of data includes :
+1: program itself,from the ui (DOM), from external sources (api)
+array sets, objects maps
+web api -> json -> object in JS
+

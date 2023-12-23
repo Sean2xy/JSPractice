@@ -418,42 +418,73 @@ console.log(uniqueStaff);
 
 // map can have different types of key
 // while object only has string
-const rest = new Map();
-rest.set('name','ss');
-rest.set(1,2);
+// const rest = new Map();
+// rest.set('name','ss');
+// rest.set(1,2);
+//
+// rest.set('categ',['it','zz']).set(true,'hh');
+// console.log(rest.get(1));
+// console.log(rest.get(true));
+// console.log(rest);
+//
+// console.log(rest.has('categ'));
+// rest.delete('name');
+// console.log(rest);
+// console.log(rest.size);
+// // rest.clear();
+// // rest.set([1,2],'test');
+// // console.log(rest.get([1,2]));
+// const arr = [1,2];
+// rest.set(arr,'test');
+// console.log(rest.get(arr));
+//
+// const que = new Map([
+//   ['q','a'],
+//   ['z','b'],
+//   [1,2],
+//   [1,'a'],
+// ]);
+// console.log(que);
+//
+// // convert object to map
+// // const hourMap = new Map(Object.entries(openingHours));
+// // console.log(hourMap);
+//
+// for (const [k,v] of que) {
+//   console.log(k,v);
+// }
+//
+// // convert map to array
+// const array = [...que];
+// console.log(array);
 
-rest.set('categ',['it','zz']).set(true,'hh');
-console.log(rest.get(1));
-console.log(rest.get(true));
-console.log(rest);
-
-console.log(rest.has('categ'));
-rest.delete('name');
-console.log(rest);
-console.log(rest.size);
-// rest.clear();
-// rest.set([1,2],'test');
-// console.log(rest.get([1,2]));
-const arr = [1,2];
-rest.set(arr,'test');
-console.log(rest.get(arr));
-
-const que = new Map([
-  ['q','a'],
-  ['z','b'],
-  [1,2],
-  [1,'a'],
+const gameEvents = new Map([
+  [17, '⚽️ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽️ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽️ GOAL'],
+  [80, '⚽️ GOAL'],
+  [92, '🔶 Yellow card'],
 ]);
-console.log(que);
 
-// convert object to map
-// const hourMap = new Map(Object.entries(openingHours));
-// console.log(hourMap);
+const events = [...new Set(gameEvents.values())];
 
-for (const [k,v] of que) {
-  console.log(k,v);
-}
+console.log(events);
+gameEvents.delete(64);
+console.log(gameEvents);
 
-// convert map to array
-const array = [...que];
-console.log(array);
+const times = [...gameEvents.keys()].pop();
+console.log(`an event happened, every ${times/gameEvents.size} minuyes`);
+for (const [k,v] of gameEvents.entries()) {
+  const temp = `${k,v}`
+  if(k<=45){
+    console.log('First half' + temp);
+  }else{
+    console.log('Second half' + temp);
+  }
+};
