@@ -94,3 +94,6 @@ const is immutable only for primitive types data
 primitive type are stored in the call stack, with address and value
 object type are stored in the call stack and heap, value has a reference to the memory address in heap
 
+day 6:
+for of loop
+using optional chaining ?. with ?? nullish
