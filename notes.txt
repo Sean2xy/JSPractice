@@ -103,3 +103,11 @@ Sources of data includes :
 array sets, objects maps
 web api -> json -> object in JS
 
+
+day7:
+functions
+Js only has pass by value, such as pass a reference to the function when dealing with object
+functions are objects
+HOF such as addEventListener , as a call back function
+functions that returns a function
+call back allows abstraction

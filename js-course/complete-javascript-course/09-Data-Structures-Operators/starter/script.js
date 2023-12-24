@@ -1,8 +1,8 @@
 'use strict';
 
 // Data needed for a later exercise
-const flights =
-  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+// const flights =
+//   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
 // const restaurant = {
@@ -488,3 +488,137 @@ for (const [k,v] of gameEvents.entries()) {
     console.log('Second half' + temp);
   }
 };
+console.log(gameEvents.size);
+
+
+const airLine = 'TAP AIR CN';
+const plane = 'AE336';
+console.log(plane[0]);
+console.log(airLine.length);
+
+console.log(airLine.indexOf(' '));
+console.log(airLine.lastIndexOf(' '));
+
+console.log(airLine.indexOf('CN'));
+console.log(airLine.slice(4));// split
+console.log(airLine.slice(4,7));//length will be 7-4
+console.log(airLine.slice(0,airLine.indexOf(' ')));
+console.log(airLine.slice(airLine.lastIndexOf(' ')+1));
+
+console.log(airLine.slice(-2));
+console.log(airLine.slice(1,-1));
+
+const checkMiddle = function(seat) {
+  // B and E are middle
+  const s = seat.slice(-1);
+  if(s==='B' || s==='e') console.log('the middle seat');
+}
+checkMiddle('11B');
+
+console.log(airLine.toLowerCase());
+
+let passenger = 'jONAs';
+passenger = passenger.toLowerCase();
+passenger=passenger[0].toUpperCase() + passenger.slice(1);
+console.log(passenger);
+
+// check user input
+const email = 'hh@gmail.com';
+const logInEmail = '  Hh@gmail.com  ';
+
+const lowerE = logInEmail.toLowerCase();
+const nospace = lowerE.trim();
+console.log(nospace);
+
+const normalizeEmail = lowerE.toLowerCase().trim();
+
+const priceGB = '288,97*';
+const priceUS = priceGB.replace('*','$').replace(',','.');
+console.log(priceUS);
+
+const announceMnet = 'All boarding to All 23';
+console.log(announceMnet.replace('All','some'));
+console.log(announceMnet.replace(/door/g,'some'));
+
+const planet = 'B A320neo';
+console.log(planet.includes('A32'));
+console.log(planet.startsWith('A32'));//  endsWith
+
+const checkBaggage = function(items) {
+  const baggage = items.toLowerCase();
+  if(baggage.includes('knife') || baggage.includes('gun')){
+    console.log('go away');
+  }else{
+    console.log('welcome');
+  }
+}
+checkBaggage('I have laptop, food, snack')
+
+console.log('A+very+B+nice'.split('+'));
+
+const [fN,lN] = 'Sean Zhu'.split(" ");
+console.log(fN,lN);
+
+const joint = ['Mr.',fN,lN.toUpperCase()].join(" ");
+console.log(joint);
+
+const capitName = function(name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+  for (const name1 of names) {
+    // namesUpper.push(name1[0].toUpperCase()+name1.slice(1));
+    namesUpper.push(name1.replace(name1[0],name1[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+}
+capitName('sean zhu');
+
+const message = 'Go to gate 23';
+
+console.log(message.padStart(25,"+"));
+console.log(message.padEnd(26,'b'));
+
+const mask = function(card) {
+  const str = card +'';
+  const masked = str.slice(-4);
+  return masked.padStart(str.length,'*');
+}
+console.log(mask(233352352332768));
+
+//repeat
+const msg = 'bad weather all delays';
+console.log(msg.repeat(6));
+
+const palneInline = function(n) {
+  console.log(`there are ${n} planes, with ${'🎉'.repeat(n)}`);
+};
+palneInline(2);
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+document.querySelector('button').addEventListener('click',function() {
+  const text = document.querySelector('textarea').value;
+  const rows = text.split('\n');
+  let res = '';
+  for (const [i,row] of rows.entries()) {
+    const twoWord = row.toLowerCase().trim().split("_");
+    const upperSecond = twoWord[1][0].toUpperCase() + twoWord[1].slice(1);
+    res = res + twoWord[0] + upperSecond +'\n';
+  }
+  console.log(res);
+})
+
+const flights =
+  '_Delayed_Departure;fao93766109;txl2133758440;11:25' +
+  '+_Arrival;bru0943384722;fao93766109;11:45' +
+  '+_Delayed_Arrival;hel7439299980;fao93766109;12:05' +
+  '+_Departure;fao93766109;lis2323639855;12:30';
+const getCode = str => str.slice(0,3).toUpperCase();
+
+console.log(flights.split('+'));
+for (const flight of flights.split("+")) {
+  const [type,from,to,time] = flight.split(";");
+  const res = `${type.startsWith('_Delayed')?'dan':''} ${type.replaceAll('_','')} ${from.slice(3).toUpperCase()} ${to.slice(0,3).toUpperCase()} ${time.replace(':','h')}`.padStart(20);
+  console.log(res);
+}
