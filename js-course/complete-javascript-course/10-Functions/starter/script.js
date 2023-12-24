@@ -127,3 +127,104 @@ const addTax1 = function(rate) {
 }
 const addVat2 = addTax1(0.23);
 console.log(addVat2(20));
+
+
+const poll = {
+  question: 'What is your favourite programming language?',
+  options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
+  // This generates [0, 0, 0, 0]. More in the next section 😃
+  answers: new Array(4).fill(0),
+  register(){
+    const input = Number(prompt(`${this.question}\n ${this.options.join('\n')} \n write option`));
+    if(input>3 || input<0){
+      console.log('false');
+    }else{
+      this.answers[input]++;
+    }
+    this.displayResults();
+  },
+  displayResults(type='array'){
+    if(type==='array'){
+      console.log(this.answers);
+    }else{
+      console.log(`Poll results are ${this.answers.join(',')}`);
+
+    }
+  }
+};
+document.querySelector('.poll').addEventListener('click',poll.register.bind(poll));
+// object
+poll.displayResults.call({answers:[5,2,3]},'string');
+
+// imeedidately invoked function expression
+(function runOnce() {
+  console.log('run once');
+  const isPrivate = 23;
+})();
+
+(()=>console.log('amaazing'))();
+
+{
+  const privateIs = 23;
+}
+
+const secureBooking = function() {
+  let pasCount = 0;
+
+  return function (){
+    pasCount++;
+    console.log(pasCount);
+  }
+}
+
+const bookes = secureBooking();
+bookes();
+bookes();
+
+let f;
+
+const g= function() {
+  const a = 23;
+  f= function() {
+    console.log(a*2);
+  }
+};
+
+const h = function() {
+  const b=777;
+  f= function() {
+    console.log(b*2);
+  }
+}
+
+g();
+f();
+
+h();
+f();
+
+const boardPass = function(n, wait) {
+  const perG = n/3;
+
+  setTimeout(function() {
+    console.log(`we are boarding all ${n}`);
+
+  },1000*wait);
+
+  console.log(`will start boarding in ${wait} secnods`);
+}
+
+boardPass(100,3);
+
+//closures
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+  console.log('test');
+
+  document.body.addEventListener('click',function() {
+    // console.dir(header);
+    header.style.color = 'blue';
+  })
+})();
+

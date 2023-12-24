@@ -111,3 +111,6 @@ functions are objects
 HOF such as addEventListener , as a call back function
 functions that returns a function
 call back allows abstraction
+
+closures: has high priority than scope chain
+/ reverse mutates the origin array

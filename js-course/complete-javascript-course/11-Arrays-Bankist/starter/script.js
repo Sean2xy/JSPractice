@@ -74,3 +74,32 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+let arr = ['a','b','c'];
+console.log(arr.slice(1,3));
+console.log(arr.slice(-1));
+console.log(arr.slice(1));
+
+const newArray = [...arr];
+console.log(newArray);
+
+// splice, it changes the origin array
+arr.splice(1);//delete b and c
+// arr.splice(-1);// delete last one e
+console.log(arr);
+
+// reverse mutates the origin array
+const arr2 = [1,2,3,4,5,6,7];
+console.log(arr2.reverse());
+console.log(arr2);
+
+const letters = arr.concat(arr2);
+console.log(letters);
+console.log([...arr,...arr2]);
+
+//join
+console.log(arr2.join('-'));
+
+const arr3 = [1,2,3,4];
+console.log(arr3[arr3.length-1]);
+console.log(arr3.at(-1));
+console.log(arr3.slice(-1)[0]);
