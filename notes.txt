@@ -114,3 +114,13 @@ call back allows abstraction
 
 closures: has high priority than scope chain
 / reverse mutates the origin array
+
+day 8:
+forEach loop order is element,index and array, can not use break and continue
+
+HTML DOM operation:insertAdjacentHTML, innerHTML, after begin
+map function return a new array
+filter function returns a new array based on condition
+reduce used for returning into single value
+modern js is coming to functional programming using call back
+for each for performing side effects
