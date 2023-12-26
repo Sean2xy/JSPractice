@@ -128,3 +128,10 @@ for each for performing side effects
 
 day9:
 reminder
+setTimeout call back function only executes once
+
+DOM is a very complext API, containing a lots of properties and methods to intreact with DOM tree
+DOM node has four types, element, text, comment, document, eventtarget
+DOM element is unique
+Event propogation
+1 capturing 2 target 3 bubbling

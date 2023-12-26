@@ -180,9 +180,36 @@ const updateUI = function (acc) {
   calcDisplaySummary(acc);
 };
 
+const startLogoutTimer = function() {
+  // set time to 5
+  let time = 10;
+  const tick = function() {
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const se = String(time % 60).padStart(2, 0);
+
+    //print cur ui
+    //log out when it is 0
+    labelTimer.textContent = `${min} ${se}`;
+
+
+    if (time === 0) {
+      clearInterval(timer);
+      labelWelcome.textContent = 'Log in';
+      containerApp.style.opacity = 0;
+    }
+    time--;
+  }
+  tick();
+  // call the timer every second
+  const timer = setInterval(tick,1000);
+
+  return timer;
+
+}
 ///////////////////////////////////////
 // Event handlers
 let currentAccount;
+let timer;
 
 const locale = navigator.language;
 
@@ -245,6 +272,10 @@ btnLogin.addEventListener('click', function (e) {
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
 
+    if(timer) clearInterval(timer);
+    timer = startLogoutTimer();
+
+
     // Update UI
     updateUI(currentAccount);
   }
@@ -272,6 +303,11 @@ btnTransfer.addEventListener('click', function (e) {
     receiverAcc.movementsDates.push(new Date().toISOString());
     // Update UI
     updateUI(currentAccount);
+
+
+    // reset timer
+    clearInterval(timer);
+    timer = startLogoutTimer();
   }
 });
 
@@ -281,14 +317,22 @@ btnLoan.addEventListener('click', function (e) {
   const amount = Math.floor(inputLoanAmount.value);
 
   if (amount > 0 && currentAccount.movements.some(mov => mov >= amount * 0.1)) {
-    // Add movement
-    currentAccount.movements.push(amount);
 
-    currentAccount.movementsDates.push(new Date().toISOString());
-    // Update UI
-    updateUI(currentAccount);
+    setTimeout(function() {
+      // Add movement
+      currentAccount.movements.push(amount);
+
+      currentAccount.movementsDates.push(new Date().toISOString());
+      // Update UI
+      updateUI(currentAccount);
+    },3000);
+    clearInterval(timer);
+    timer = startLogoutTimer();
+
   }
   inputLoanAmount.value = '';
+
+
 });
 
 btnClose.addEventListener('click', function (e) {
@@ -426,3 +470,17 @@ btnSort.addEventListener('click', function (e) {
 // };
 //
 // console.log(new Intl.NumberFormat('en-US',opinions).format(num));
+
+// setTimeout(function() {
+//   console.log('pissa');
+// },1000);
+const ingre = ['zz','bb']
+const pTimer = setTimeout((in1,in2)=>console.log(`${in1},${in2}`),2000,...ingre);
+console.log('waiting');
+clearTimeout(pTimer);
+
+// every per 1 second
+// setInterval(function() {
+//   const now = new Date();
+//   console.log(now);
+// },1000)
