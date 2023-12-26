@@ -388,3 +388,52 @@ const convertT = function(str) {
   return str.toLowerCase().split(' ').map(s=>exceptions.includes(s)?s:s[0].toUpperCase() + s.slice(1)).join(' ');
 };
 console.log(convertT('this is a nice title'));
+
+const dogs = [
+  { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+  { weight: 8, curFood: 200, owners: ['Matilda'] },
+  { weight: 13, curFood: 275, owners: ['Sarah', 'John'] },
+  { weight: 32, curFood: 340, owners: ['Michael'] }
+];
+
+dogs.forEach(function(dog) {
+  // console.log(dog);
+  dog.recommedFood = dog.weight ** 0.75 * 28;
+});
+const dogSe = dogs.find(function(dog) {
+  return dog.owners.includes('Sarah')
+});
+
+const check = function(dogSe) {
+  if(dogSe.curFood>dogSe.recommedFood){
+    return 'eating too much ';
+  }else if(dogSe.curFood<dogSe.recommedFood){
+    return 'eating too less ';
+  }else if(dogSe.curFood > (dogSe.recommedFood * 0.90) && dogSe.curFood < (dogSe.recommedFood * 1.10)){
+    return 'eating okay';
+  }
+};
+console.log(check(dogSe));
+
+
+const eatTooMuch = dogs.filter(e=>e.curFood>e.recommedFood).flatMap(e=>e.owners);
+console.log(eatTooMuch);
+const eatTooLittle = dogs.filter(e=>e.curFood>e.recommedFood).flatMap(e=>e.owners);
+console.log(eatTooLittle);
+
+console.log(`${eatTooMuch.join(' and ')}'s dog are eat too much`);
+
+console.log(dogs.some(d=>d.curFood===d.recommedFood));
+console.log(dogs.filter(d=>d.curFood>=d.recommedFood));
+const checkEatingOkay = dog =>
+  dog.curFood > dog.recommedFood * 0.9 && dog.curFood < dog.recommedFood * 1.1;
+console.log(dogs.some(checkEatingOkay));
+
+const eatOkay = dogs.filter(checkEatingOkay);
+console.log(eatOkay);
+
+const copied = [...dogs];
+console.log(copied);
+// const recommed = copied.map(e=>e.recommedFood);
+// a and b are objects
+console.log(copied.sort((a,b)=>a.recommedFood-b.recommedFood));

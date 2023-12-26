@@ -125,3 +125,6 @@ reduce used for returning into single value
 modern js is coming to functional programming using call back
 for each for performing side effects
 // for number to rewrite compareFn using built in
+
+day9:
+reminder
