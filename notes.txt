@@ -149,3 +149,5 @@ such as Array.prototype.map()
 1 constructor function, 2 ES6 classes synatax sugar 3 Object.create()
 classes are not hosited, are also first class citizen, just a speical type of function
 class are executed in strict code
+
+https://www.bilibili.com/video/BV1vA4y197C7?p=194&vd_source=318b40dbb80ee15c2068c873562385b0
