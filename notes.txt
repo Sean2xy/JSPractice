@@ -135,3 +135,17 @@ DOM node has four types, element, text, comment, document, eventtarget
 DOM element is unique
 Event propogation
 1 capturing 2 target 3 bubbling
+
+day10:
+DOM lifecycle:
+DOM content loaded (html parsed and DOM tree built) => load event => before unload
+script loading in head (x can not do it) and body end (parsing html first, then fetch script and execute)
+script defer is better than async when it comes to the head
+
+oop in JS
+class is a blue print, instances are actual objects
+objects are linked to a prototype, behavior is delegated to the linked prototype object
+such as Array.prototype.map()
+1 constructor function, 2 ES6 classes synatax sugar 3 Object.create()
+classes are not hosited, are also first class citizen, just a speical type of function
+class are executed in strict code
