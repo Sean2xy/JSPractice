@@ -154,3 +154,14 @@ https://www.bilibili.com/video/BV1vA4y197C7?p=194&vd_source=318b40dbb80ee15c2068
 
 day11:
 Array.from() method is a static method, only availiable on constructor
+// // how new wokrs
+// // 1. new {} is created
+// // 2. function is called, tihs ={}
+// // 3. {}linked to prototype
+// // 4. function automatically return {}
+
+How to develop :
+1: User stories (who what why)
+2: Features
+3: FlowChart
+4: Architecture
