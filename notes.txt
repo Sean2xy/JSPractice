@@ -151,3 +151,6 @@ classes are not hosited, are also first class citizen, just a speical type of fu
 class are executed in strict code
 
 https://www.bilibili.com/video/BV1vA4y197C7?p=194&vd_source=318b40dbb80ee15c2068c873562385b0
+
+day11:
+Array.from() method is a static method, only availiable on constructor
