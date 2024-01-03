@@ -195,3 +195,24 @@ Promise lifecycle:  pending (async task)->settled (fulfilled,rejected)
 is only settled once
 
 .then function use to handle fulfiled or rejected on promise, taking a call back
+
+event loop: (JS engine(heap,call stack), web apis(dom,fetch,timer),call back and microtask queue)
+JavaScript是一种单线程执行的语言 one thread of execution
+单线程也意味着JavaScript在执行长时间运行的任务时可能会阻塞用户界面和其他脚本的执行。
+为了解决这个问题，JavaScript和它的运行环境提供了异步编程的能力。(concurrency model)
+异步编程允许JavaScript在等待某些操作（如网络请求、I/O操作）的完成时继续执行其他代码，
+而不是停滞在一个操作上。这是通过事件循环、回调函数、Promise、async/await等机制实现的。
+Steps:
+执行栈（Execution Stack）：当一个JavaScript脚本开始执行时，它首先会处理所有同步代码。这些代码片段被放置在执行栈中，按顺序执行。
+Web API/Node.js API：当遇到异步操作（如setTimeout、网络请求等）时，这些操作会被浏览器或Node.js的API接管，从而不会阻塞执行栈中的其他代码。
+微任务队列（Microtask Queue）：除了常规的任务队列，还有一个微任务队列，
+用于处理微任务（如Promise的回调）。在每次执行栈为空，并且在执行下一个任务之前，
+事件循环都会先处理所有的微任务。这确保了微任务比常规的宏任务（如setTimeout的回调）有更高的优先级和更快的响应时间
+任务队列（call back Queue）：异步操作完成后，相应的回调函数会被放入任务队列（也称为消息队列或事件队列）。任务队列存储了所有待执行的回调函数。
+事件循环：事件循环的角色是监控执行栈和任务队列。如果执行栈为空，事件循环会从任务队列中取出一个任务（回调函数）并放入执行栈中执行。
+
+console.log('Test start');
+setTimeout(()=>console.log('zero timer'),0);
+Promise.resolve('Resolve promise1').then(res=>console.log(res));
+console.log('test end');;
+// test start, end,resolve promise1, zero timer

@@ -121,27 +121,121 @@ const countriesContainer = document.querySelector('.countries');
 // getCountry('zzz');
 
 // handle error
-const whereAMI = function(lat,lng) {
-  fetch(`https://geocode.xyz/${lat},${lng}geoit=json`)
-    .then(response=>{
-      if(!response.ok){
-        throw new Error(`problem with ${response.status}`);
-      }
-      return response.json()
-    })
-    .then(data=>{
-      console.log(`You are in${data.city},${data.country}`)
+// const whereAMI = function(lat,lng) {
+//   fetch(`https://geocode.xyz/${lat},${lng}geoit=json`)
+//     .then(response=>{
+//       if(!response.ok){
+//         throw new Error(`problem with ${response.status}`);
+//       }
+//       return response.json()
+//     })
+//     .then(data=>{
+//       console.log(`You are in${data.city},${data.country}`)
+//
+//       return fetch(`https://restcountries.eu/rest/v2/name/${data.country}`);
+//     })
+//     .then(res=>{
+//       if(!res.ok) throw new Error('country')
+//
+//       return res.json()
+//     })
+//     .then(data=>console.log(data))
+//     .catch(err=>console.log(err))
+// }
+// whereAMI(52.508, 13.381 )
+// whereAMI(19.037, 72.873)
+// whereAMI(-33.933, 18.474 )
 
-      return fetch(`https://restcountries.eu/rest/v2/name/${data.country}`);
-    })
-    .then(res=>{
-      if(!res.ok) throw new Error('country')
+// console.log('Test start');
+// setTimeout(()=>console.log('zero timer'),0);
+// Promise.resolve('Resolve promise1').then(res=>console.log(res));
+// console.log('test end');;
+// test start, end,resolve promise1, zero timer
 
-      return res.json()
+// takes one argument - executor
+// const lottery = new Promise(function(resolve,reject) {
+//   console.log(`lottery start`);
+//
+//   setTimeout(function() {
+//     if(Math.random()>=0.5){
+//       resolve('you win')
+//     }else {
+//       reject(new Error('you lose'))
+//     }
+//   },2000)
+// })
+// lottery.then(response=>console.log(response)).catch(err=>console.log(err));
+//
+// promisfiy
+const wait = function(second) {
+  return new Promise(function(resolve) {
+    setTimeout(resolve,second*1000);
+  });
+};
+// nested call back
+// wait(2)
+//   .then(()=>{
+//   console.log(`wait two second`)
+//   return wait(1)
+// })
+//   .then(()=>{
+//     console.log('i waited for 1 second')
+//     return wait(2);
+//   })
+//   .then(()=>console.log('Another 2 second'));
+
+// Promise.resolve('abc').then((x=>console.log(x)));
+//
+//
+// const getPosition = function() {
+//   return new Promise(function(resolve, reject) {
+//     // navigator.geolocation.getCurrentPosition(
+//     //   position => resolve(position),
+//     //   err=>reject(err)
+//     // )
+//     navigator.geolocation.getCurrentPosition(resolve,reject);
+//   })
+// }
+// getPosition().then(p=>console.log(p))
+const imgContainer = document.querySelector('.images');
+const createImage = function(imgPath) {
+  return new Promise(function(resolve, reject) {
+    const img = document.createElement('img')
+    img.src=imgPath
+    img.addEventListener('load',function() {
+      imgContainer.append(img)
+      resolve(img)
+    });
+
+    img.addEventListener('error',function() {
+      reject(new Error('not found'));
     })
-    .then(data=>console.log(data))
-    .catch(err=>console.log(err))
-}
-whereAMI(52.508, 13.381 )
-whereAMI(19.037, 72.873)
-whereAMI(-33.933, 18.474 )
+  })
+};
+let curImg;
+createImage('img/img-1.jpg')
+  .then(img=>{
+  curImg=img;
+  console.log(`first`);
+  return wait(2)
+})
+  .then(()=>{
+    curImg.style.display='none';
+    return createImage('img/img-2.jpg')
+  })
+  .then((img)=>{
+    curImg = img;
+    console.log('second');
+    return wait(2);
+  })
+  .then(()=>{
+    curImg.style.display='none';
+    return createImage('img/img-3.jpg')
+  })
+  .then(img=>{
+    curImg = img;
+    console.log('third');
+    return wait(2);
+  }).then(()=>{
+  curImg.style.display='none';
+  }).catch(err=>console.log(err));
