@@ -165,3 +165,33 @@ How to develop :
 2: Features
 3: FlowChart
 4: Architecture
+
+day 12:
+Asynchrounous code is executed after a task that runs in the background finishes
+Asynchronous code is non-blocking, Execution does not wait for an asynchronous task to finish its work
+not happend in the same time
+Call back foundation does not make code asynchronous
+addEventListener does not automitaclly make code asynchrounous
+
+AJAX - Asynchorouns JS and XML
+API: allow applications to talk to each other, piece of software, DOM, Geolocation, Own Class , Web API
+API uses JSON data format (js object but just converts to a string)
+
+What happens when we access a web server:
+1: DNS 2: TCP/IP socket connection
+3 (header,start line, request/responce body): HTTP REQUEST (method)
+4: HTTP RESPONSE (status code) 5: index.html is the first to be loaded
+Scanned for assets JS, CSS, images Process is repeated for each file
+
+// sequence of AJAX call
+// nested call backs
+// when have lots of, call back hell
+// using Promise to solve call back hell
+
+promise: A container for a future value, A placeholder for the future result of an asynchronus operation
+no longer rely on events and callbacks passed into asynchrounous function
+we can chain promises for a sequence of asynchrouns operation, avoid call back hell
+Promise lifecycle:  pending (async task)->settled (fulfilled,rejected)
+is only settled once
+
+.then function use to handle fulfiled or rejected on promise, taking a call back
