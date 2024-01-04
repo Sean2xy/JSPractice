@@ -216,3 +216,8 @@ setTimeout(()=>console.log('zero timer'),0);
 Promise.resolve('Resolve promise1').then(res=>console.log(res));
 console.log('test end');;
 // test start, end,resolve promise1, zero timer
+
+day13:
+async, await
+async returns a promise object
+await equals to then

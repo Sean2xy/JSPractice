@@ -1,5 +1,9 @@
 'use strict';
 
+
+
+
+
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
@@ -167,11 +171,11 @@ const countriesContainer = document.querySelector('.countries');
 // lottery.then(response=>console.log(response)).catch(err=>console.log(err));
 //
 // promisfiy
-const wait = function(second) {
-  return new Promise(function(resolve) {
-    setTimeout(resolve,second*1000);
-  });
-};
+// const wait = function(second) {
+//   return new Promise(function(resolve) {
+//     setTimeout(resolve,second*1000);
+//   });
+// };
 // nested call back
 // wait(2)
 //   .then(()=>{
@@ -197,6 +201,177 @@ const wait = function(second) {
 //   })
 // }
 // getPosition().then(p=>console.log(p))
+// const imgContainer = document.querySelector('.images');
+// const createImage = function(imgPath) {
+//   return new Promise(function(resolve, reject) {
+//     const img = document.createElement('img')
+//     img.src=imgPath
+//     img.addEventListener('load',function() {
+//       imgContainer.append(img)
+//       resolve(img)
+//     });
+//
+//     img.addEventListener('error',function() {
+//       reject(new Error('not found'));
+//     })
+//   })
+// };
+// let curImg;0
+// createImage('img/img-1.jpg')
+//   .then(img=>{
+//   curImg=img;
+//   console.log(`first`);
+//   return wait(2)
+// })
+//   .then(()=>{
+//     curImg.style.display='none';
+//     return createImage('img/img-2.jpg')
+//   })
+//   .then((img)=>{
+//     curImg = img;
+//     console.log('second');
+//     return wait(2);
+//   })
+//   .then(()=>{
+//     curImg.style.display='none';
+//     return createImage('img/img-3.jpg')
+//   })
+//   .then(img=>{
+//     curImg = img;
+//     console.log('third');
+//     return wait(2);
+//   }).then(()=>{
+//   curImg.style.display='none';
+//   }).catch(err=>console.log(err));
+
+
+// const whereAMI = async function(c) {
+//
+//   // fetch(`https://restcountries.com/v3.1/name/${c}`).then(res=>console.log(res));
+//   try{
+//     const res = await fetch(`https://restcountries.com/v3.1/name/${c}`);
+//     if(!res.ok) throw new Error('can not get data')
+//     const data = await res.json();
+//     // const p = await fetch(`https://geocode.xyz/${lat},${lng}geoit=json`);
+//     // const data2 = await p.json();
+//     console.log(data);
+//
+//     return `You are in ${data.city}`;
+//   }catch (e){
+//     console.log(e);
+//
+//     // reject promise returned from async function
+//     throw e;
+//   }
+//
+//
+// }
+// console.log('first');
+// // whereAMI('portugal')
+// //   .then(city=>console.log(city))
+// //   .catch(e=>console.log(e));
+// (async function(){
+//   try{
+//     const city = await whereAMI('portugal')
+//     console.log(city);
+//   }catch (e) {
+//     console.error(e.message)
+//   }
+//   console.log('3');
+// })();
+//
+//
+// console.log('second');
+// const getPosition = function() {
+//   return new Promise(function(resolve, reject) {
+//     // navigator.geolocation.getCurrentPosition(
+//     //   position => resolve(position),
+//     //   err=>reject(err)
+//     // )
+//     navigator.geolocation.getCurrentPosition(resolve,reject);
+//   })
+// }
+// try{
+//   let y= 1;
+//   const x = 2;
+//
+// }catch (e) {
+//   alert(e.message)
+// }
+//
+// const getJSON = function (url, errorMsg = 'Something went wrong') {
+//   return fetch(url).then(response => {
+//     if (!response.ok) throw new Error(`${errorMsg} (${response.status})`);
+//
+//     return response.json();
+//   });
+// };
+// const getThreeCountry = async function(c1,c2,c3) {
+//   try{
+//    // const [data1] = await getJSON(`https://restcountries.com/v3.1/name/${c1}`);
+//    //  const [data2] = await getJSON(`https://restcountries.com/v3.1/name/${c2}`);
+//    //  const [data3] = await getJSON(`https://restcountries.com/v3.1/name/${c3}`);
+//
+//     const data = await Promise.all([
+//         getJSON(`https://restcountries.com/v3.1/name/${c1}`),
+//         getJSON(`https://restcountries.com/v3.1/name/${c2}`),
+//         getJSON(`https://restcountries.com/v3.1/name/${c3}`),
+//       ]);
+//     console.log(data);
+//     console.log(data.map(d=>d[0].capital));
+//   }catch (e){
+//     console.error(e);
+//   }
+// }
+//
+// (async function(){
+//   const res = await Promise.race([
+//     getJSON(`https://restcountries.com/v3.1/name/italy`),
+//     getJSON(`https://restcountries.com/v3.1/name/egypt`),
+//     getJSON(`https://restcountries.com/v3.1/name/mexico`),
+//   ]);
+//   console.log(res[0]);
+// })()
+
+
+// const timeout = function(s) {
+//   return new Promise(function(_,reject) {
+//     setTimeout(function() {
+//       reject(new Error('too long'));
+//     },s)
+//   })
+// };
+//
+// Promise.race([getJSON(`https://restcountries.com/v3.1/name/mexico`),timeout(1),])
+//   .then(res=>console.log(res[0]))
+//   .catch(err=>console.log(err));
+// 3 array
+// Promise.allSettled([
+//   Promise.resolve('success'),
+//   Promise.reject('error'),
+//   Promise.resolve('another')
+// ]).then(res=>console.log(res)).catch(error=>console.log(error))
+// // error
+// Promise.all([
+//   Promise.resolve('success'),
+//   Promise.reject('error'),
+//   Promise.resolve('another')
+// ]).then(res=>console.log(res)).catch(error=>console.log(error))
+//
+// // success, return the first fulfield value
+// Promise.any([
+//   Promise.resolve('success'),
+//   Promise.reject('error'),
+//   Promise.resolve('another')
+// ]).then(res=>console.log(res)).catch(error=>console.log(error))
+//
+
+const wait = function (seconds) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, seconds * 1000);
+  });
+};
+
 const imgContainer = document.querySelector('.images');
 const createImage = function(imgPath) {
   return new Promise(function(resolve, reject) {
@@ -212,30 +387,55 @@ const createImage = function(imgPath) {
     })
   })
 };
-let curImg;
-createImage('img/img-1.jpg')
-  .then(img=>{
-  curImg=img;
-  console.log(`first`);
-  return wait(2)
-})
-  .then(()=>{
-    curImg.style.display='none';
-    return createImage('img/img-2.jpg')
-  })
-  .then((img)=>{
-    curImg = img;
-    console.log('second');
-    return wait(2);
-  })
-  .then(()=>{
-    curImg.style.display='none';
-    return createImage('img/img-3.jpg')
-  })
-  .then(img=>{
-    curImg = img;
-    console.log('third');
-    return wait(2);
-  }).then(()=>{
-  curImg.style.display='none';
-  }).catch(err=>console.log(err));
+let curImg;0
+
+const loadN = async function(){
+  try {
+    let img = await createImage('img/img-1.jpg');
+    await wait(2);
+    img.style.display='none';
+
+    img = await createImage('img/img-2.jpg');
+    await wait(2);
+    img.style.display='none';
+  }catch (err) {
+    console.log(err);
+  }
+}
+
+loadN();
+
+const loadALL = async function(imgArr){
+  const imgs = imgArr.map(async i => await createImage(i));
+  const obj = await Promise.all(imgs)
+
+  console.log(obj);
+  obj.forEach(img=>img.classList.add('parallel'))
+}
+loadALL(['img/img-1.jpg','img/img-2.jpg'])
+// createImage('img/img-1.jpg')
+//   .then(img=>{
+//   curImg=img;
+//   console.log(`first`);
+//   return wait(2)
+// })
+//   .then(()=>{
+//     curImg.style.display='none';
+//     return createImage('img/img-2.jpg')
+//   })
+//   .then((img)=>{
+//     curImg = img;
+//     console.log('second');
+//     return wait(2);
+//   })
+//   .then(()=>{
+//     curImg.style.display='none';
+//     return createImage('img/img-3.jpg')
+//   })
+//   .then(img=>{
+//     curImg = img;
+//     console.log('third');
+//     return wait(2);
+//   }).then(()=>{
+//   curImg.style.display='none';
+//   }).catch(err=>console.log(err));
