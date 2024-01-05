@@ -221,3 +221,14 @@ day13:
 async, await
 async returns a promise object
 await equals to then
+
+day14:
+module are reusable piece of code
+that encaluputates implementation details
+import （dependency），export （api）
+top level variables scoped to module
+ES6 modules also support import and
+export，need to happen at top-level
+imports are hoisted since need to
+happen at top-level
+top level await in module
