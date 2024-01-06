@@ -232,3 +232,22 @@ export，need to happen at top-level
 imports are hoisted since need to
 happen at top-level
 top level await in module
+
+npm manage the dependency
+in the real case do not need to include node_module files
+bundling the frontend project for compressing and high performance using webpack or parcel
+Babel used for converting ES6 to ES5 (only syntax can be transplied, new features can be polyfilled）
+
+Write clean code: the most straightforward，descriptive variable and function
+use dry code （reusable，do not repeat yourself）do not use var，use strong type checks
+Each function should only do one thing， do not use more than 3 parameters，use arrow function
+use early return，ternary，muitiple if ，avoid for loop，use async and await （instead of then and catch）
+run promises in parallel using Promise.all handle errors and promise rejection
+
+In java，imperative paradigm，how to do things
+In JavaScript，declarative （functional programming）
+way of writting code，what to do， such as using map，filter，reduce in array
+side effect is modifying of any data outside of the function
+pure function，avoid side effect，mutating data， state is unchangeable
+declarative syntax：array，object destructing，spread operator ... use the ternary，use template literals
+

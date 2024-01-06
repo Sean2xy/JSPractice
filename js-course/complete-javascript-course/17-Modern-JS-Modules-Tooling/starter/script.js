@@ -42,3 +42,24 @@ addToCart(q,p);
 // }
 //
 // const {addToCart} = require('./shoppingCart.js')
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es'
+const state = {
+  cart:[
+    {product:'zz',quantyty:5},
+    {product:'bb',quantyty:5},
+  ],
+  user:{loggedIn:true},
+}
+
+const deepClone = cloneDeep(state);
+state.user.loggedIn=false;
+console.log(deepClone);
+
+if(module.hot){
+  module.hot.accept();
+}
+
+Promise.resolve('Test').then(function(x) {
+  return console.log(x)
+})
