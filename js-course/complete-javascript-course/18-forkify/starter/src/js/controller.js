@@ -1,17 +1,17 @@
 import * as model from './model.js'
 import recipeView from './views/recipeView.js'
-
+import paginationView from './views/paginationView';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import searchView from './views/searchView';
+import resultsView from './views/resultsView';
 
-const recipeContainer = document.querySelector('.recipe');
-
-
-
+if(module.hot){
+  module.hot.accept()
+}
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
-
 
 const controlRecipe = async function(){
   try {
@@ -21,7 +21,7 @@ const controlRecipe = async function(){
     // 1 load recipe
     await model.loadRecipe(id)
     // 2 rendering recipe
-    recipeView.render(model.data.recipe);
+    recipeView.render(model.state.recipe);
   }catch (err){
 
     recipeView.renderError(`${err} error`);
@@ -30,15 +30,41 @@ const controlRecipe = async function(){
 
 const controlSearchRes = async function() {
   try {
-    await model.loadSearchResults('pizza')
-  }catch (e){
+    resultsView.renderSpinner()
+    // 1 get search query
+    const query = searchView.getQuery();
+    if(!query) return;
+    // 2 load search result
+    await model.loadSearchResults(query)
 
+    // 3 render result
+    // resultsView.render(model.state.search.result)
+    resultsView.render(model.getSearchResultPage())
+
+    // 4 pagination
+    paginationView.render(model.state.search);
+  }catch (e){
+    console.log(e);
   }
 }
 
+const controlPagination = function(goToPage) {
+  console.log('pag controller');
+  // render new
+
+  resultsView.render(model.getSearchResultPage(goToPage))
+
+  // pagination
+  paginationView.render(model.state.search);
+}
+// controlSearchRes()
 const init = function() {
-  recipeView.addHandlerRender(controlRecipe)
+  recipeView.addHandlerRender(controlRecipe);
+  searchView.addHandlerSearch(controlSearchRes);
+  paginationView.addHandlerClick(controlPagination);
 }// view has no idea of how controlRecipe works, but it will receive once it has updated
 // it is handled in here
+
+init();
 
 
