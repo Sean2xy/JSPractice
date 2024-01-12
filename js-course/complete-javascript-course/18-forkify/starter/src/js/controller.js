@@ -5,6 +5,7 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import searchView from './views/searchView';
 import resultsView from './views/resultsView';
+import bookmarksView from './views/bookmarksView';
 
 if(module.hot){
   module.hot.accept()
@@ -18,6 +19,10 @@ const controlRecipe = async function(){
     const id = window.location.hash.slice(1);
     if(!id) return;
     recipeView.renderSpinner();
+    // 0 result view
+    resultsView.update(model.getSearchResultPage());
+    bookmarksView.update(model.state.bookmarks);
+
     // 1 load recipe
     await model.loadRecipe(id)
     // 2 rendering recipe
@@ -58,10 +63,29 @@ const controlPagination = function(goToPage) {
   paginationView.render(model.state.search);
 }
 // controlSearchRes()
+const controlServings = function(newServings) {
+  model.updateServings(newServings);
+
+  // recipeView.render(model.state.recipe);
+  recipeView.update(model.state.recipe);
+}
+
+const controlAddBookmark = function() {
+  if(!model.state.recipe.bookmarked) model.addBookmark(model.state.recipe);
+  else model.deleteBookmark(model.state.recipe);
+  recipeView.update(model.state.recipe);
+
+  // render the marked
+  bookmarksView.render(model.state.bookmarks);
+
+}
 const init = function() {
   recipeView.addHandlerRender(controlRecipe);
+  recipeView.addHandlerUpdateServings(controlServings)
   searchView.addHandlerSearch(controlSearchRes);
   paginationView.addHandlerClick(controlPagination);
+
+  recipeView.addHandlerAddBookMark(controlAddBookmark);
 }// view has no idea of how controlRecipe works, but it will receive once it has updated
 // it is handled in here
 

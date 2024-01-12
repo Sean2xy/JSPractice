@@ -632,8 +632,13 @@ const controlPagination = function(goToPage) {
     (0, _paginationViewDefault.default).render(_modelJs.state.search);
 };
 // controlSearchRes()
+const controlServings = function(newServings) {
+    _modelJs.updateServings(newServings);
+    (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
+};
 const init = function() {
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipe);
+    (0, _recipeViewJsDefault.default).addHandlerUpdateServings(controlServings);
     (0, _searchViewDefault.default).addHandlerSearch(controlSearchRes);
     (0, _paginationViewDefault.default).addHandlerClick(controlPagination);
 } // view has no idea of how controlRecipe works, but it will receive once it has updated
@@ -2494,6 +2499,7 @@ parcelHelpers.export(exports, "state", ()=>state);
 parcelHelpers.export(exports, "loadRecipe", ()=>loadRecipe);
 parcelHelpers.export(exports, "loadSearchResults", ()=>loadSearchResults);
 parcelHelpers.export(exports, "getSearchResultPage", ()=>getSearchResultPage);
+parcelHelpers.export(exports, "updateServings", ()=>updateServings);
 var _configJs = require("./config.js");
 var _helperJs = require("./helper.js");
 const state = {
@@ -2552,6 +2558,12 @@ const getSearchResultPage = function(page = state.search.page) {
     const end = page * state.search.resultPerPage;
     return state.search.result.slice(start, end);
 };
+const updateServings = function(newServings) {
+    state.recipe.ingredients.forEach((ing)=>{
+        ing.quantity = ing.quantity * newServings / state.recipe.servings;
+    });
+    state.recipe.servings = newServings;
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./config.js":"k5Hzs","./helper.js":"lVRAz"}],"k5Hzs":[function(require,module,exports) {
 // constant, reuse
@@ -2607,6 +2619,14 @@ class RecipeView extends (0, _viewJsDefault.default) {
             "load"
         ].forEach((ev)=>window.addEventListener(ev, handler));
     }
+    addHandlerUpdateServings(handler) {
+        this._parentElement.addEventListener("click", function(e) {
+            const btn = e.target.closest(".btn--tiny");
+            if (!btn) return;
+            const updateTo = +btn.dataset.updateTo;
+            if (updateTo > 0) handler(updateTo);
+        });
+    }
     _generateMarkup() {
         return `
         <figure class="recipe__fig">
@@ -2632,17 +2652,19 @@ class RecipeView extends (0, _viewJsDefault.default) {
             <span class="recipe__info-text">servings</span>
 
             <div class="recipe__info-buttons">
-              <button class="btn--tiny btn--increase-servings">
-                <svg>
-                  <use href="${0, _iconsSvgDefault.default}#icon-minus-circle"></use>
-                </svg>
-              </button>
-              <button class="btn--tiny btn--increase-servings">
-                <svg>
-                  <use href="${0, _iconsSvgDefault.default}#icon-plus-circle"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings - 1}">
+              <svg>
+                <use href="${0, _iconsSvgDefault.default}#icon-minus-circle"></use>
+              </svg>
+            </button>
+            <button class="btn--tiny btn--update-servings" data-update-to="${this._data.servings + 1}">
+              <svg>
+                <use href="${0, _iconsSvgDefault.default}#icon-plus-circle"></use>
+              </svg>
+            </button>
+          </div>
+         </div>
+            
           </div>
 
           <div class="recipe__user-generated">
