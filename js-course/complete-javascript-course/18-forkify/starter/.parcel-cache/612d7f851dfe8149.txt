@@ -1,9 +1,9 @@
-9709
+9697
 156F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@babel\highlight\node_modules\supports-color133491092429458075 1
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\es.array.to-spliced.js133491123442658254 0
 134F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@swc\core\binding.d.ts133491092431192883 0
 120F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\src\sass\_header.scss133473731410511005 0
-103F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist133496375859391915 1
+103F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist133496380109592235 1
 138F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\v8-compile-cache\README.md133491092429458075 0
 127F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\js-yaml\LICENSE133491092428351029 0
 172F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\definition-syntax\generate.js133491092435778036 0
@@ -124,7 +124,7 @@
 140F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\string\big.js133491123440336614 0
 130F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\timsort\LICENSE.md133491092429458075 0
 198F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\core\test\fixtures\plugins\node_modules\parcel-transformer-no-engines\index.js133491092434339390 0
-111F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\package.json133496362687838529 0
+111F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\package.json133496380061678208 0
 145F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\instance\keys.js133491123450874277 0
 132F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\picocolors\README.md133491092429458075 0
 118F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\braces133491092429704986 1
@@ -169,11 +169,11 @@
 155F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\array\virtual\copy-within.js133491123441359970 0
 138F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\graph\lib\Graph.js133491092430974516 0
 155F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\proposals\promise-with-resolvers.js133491123452762385 0
-125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\src\js\views\recipeView.js133473731410340992 0
+125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\src\js\views\recipeView.js133496379815319761 0
 128F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\srcset\readme.md133491092429275275 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\css-tree\lib\syntax\node\Dimension.js133491092435778036 0
 144F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\nth-check\lib\esm\compile.js.map133491092430785049 0
-111F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\src\js\views133495672330847052 1
+111F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\src\js\views133496379815329759 1
 160F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\cjs\syntax\create.cjs133491092431974378 0
 140F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\math\index.js133491123449360779 0
 133F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\mdn-data\CHANGELOG.md133491092432288347 0
@@ -522,6 +522,7 @@
 140F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\timsort\build\timsort.min.js133491092430076002 0
 163F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\internals\get-async-iterator-flattenable.js133491123447346783 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\typed-array\entries.js133491123442334538 0
+133F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.runtime.847a6835.js.map133496380109592235 0
 158F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\esnext.reflect.has-metadata.js133491123444811924 0
 147F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\aggregate-error.js133491123439260862 0
 162F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\cjs\generator\index.cjs133491092433489266 0
@@ -2335,7 +2336,6 @@
 153F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@swc\helpers\_\_ts_generator\package.json133491092437050520 0
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\es\string\virtual\match-all.js133491123451522675 0
 137F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\htmlparser2\lib\Parser.js133491092429275275 0
-125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.007a8815.js.map133496362687797065 0
 140F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\nth-check\lib\esm\parse.d.ts133491092431974378 0
 142F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@swc\helpers\esm\_ts_values.js133491092435778036 0
 133F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\base-x\src\index.d.ts133491092429614449 0
@@ -3007,7 +3007,6 @@
 133F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\is-json\test\index.js133491092429946392 0
 145F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\array\find-last.js133491123446164558 0
 132F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\is-glob\package.json133491092428997185 0
-125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.e37f48ea.js.map133496375399566107 0
 129F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\is-glob\README.md133491092429275275 0
 155F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\dist\version.cjs133491092435139094 0
 140F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\array\keys.js133491123450928204 0
@@ -3057,7 +3056,6 @@
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\package-manager\test\fixtures133491092432663986 1
 147F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\transformer-postcss\LICENSE133491092428351029 0
 139F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\immutable\dist\immutable.js133491093377343676 0
-122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\icons.21bad73c.svg133496346534208469 0
 147F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\typed-array\slice.js133491123454389682 0
 142F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\math\scale.js133491123453707946 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\css-tree\cjs\syntax\node\Function.cjs133491092433008327 0
@@ -3312,7 +3310,7 @@
 142F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\utils\src\ansi-html.js133491092429946392 0
 165F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\reporter-dev-server\lib\ServerReporter.js.map133491092432835402 0
 130F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\entities\readme.md133491092431670269 0
-122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\icons.c14567a0.svg133496362687777011 0
+122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\icons.c14567a0.svg133496380109500691 0
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\array-buffer\index.js133491123448883325 0
 140F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\entities\lib\decode.d.ts.map133491092431350476 0
 144F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\string\match.js133491123451623101 0
@@ -3686,7 +3684,6 @@
 141F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\object\keys.js133491123450939009 0
 164F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\syntax\node\Number.js133491092436328917 0
 166F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\syntax\node\Operator.js133491092436328917 0
-129F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.runtime.f63cbf5c.js133496375859341681 0
 168F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\syntax\node\Percentage.js133491092436406331 0
 179F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\syntax\node\PseudoElementSelector.js133491092436416416 0
 163F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\csso\node_modules\css-tree\lib\syntax\node\Ratio.js133491092436457178 0
@@ -5014,7 +5011,6 @@
 154F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\string\virtual\match-all.js133491123451585388 0
 143F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\regions\SA.js133491092439279793 0
 154F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\string\virtual\pad-start.js133491123452496410 0
-121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\logo.726d37a8.png133496346533846059 0
 163F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@babel\highlight\node_modules\color-name\.npmignore133491092428645352 0
 148F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\es.date.to-string.js133491123442728261 0
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\stable\string\virtual\small.js133491123454440276 0
@@ -5460,6 +5456,7 @@
 183F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\convertPathData.js133491092431553868 0
 137F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\full\object\is.js133491123450264480 0
 154F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\es.string.code-point-at.js133491123443425224 0
+125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.a9e7130c.js.map133496380109592235 0
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\es.string.fontcolor.js133491123443445408 0
 189F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\pseudo\slotted.js133491092435069532 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\es.string.fontsize.js133491123443445408 0
@@ -5601,7 +5598,6 @@
 158F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\esnext.function.demethodize.js133491123444309867 0
 161F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\esnext.function.is-constructor.js133491123444329960 0
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\webauthn.js133491092440069635 0
-121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.e37f48ea.js133496375399464484 0
 154F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\esnext.function.un-this.js133491123444339944 0
 163F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\modules\esnext.iterator.as-indexed-pairs.js133491123444349940 0
 154F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\full\array\virtual\reduce-right.js133491123453062382 0
@@ -6912,7 +6908,6 @@
 147F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\instance\splice.js133491123454772713 0
 131F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@swc\helpers\_\_set133491092437050520 1
 155F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\queryselector.js133491092439118705 0
-121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.b4ad9597.js133496375859341681 0
 152F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\instance\starts-with.js133491123454912403 0
 151F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\instance\to-spliced.js133491123456290791 0
 150F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\instance\trim-left.js133491123456801309 0
@@ -7014,7 +7009,7 @@
 145F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\array\reverse.js133491123453610866 0
 142F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\array\sort.js133491123454634246 0
 144F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\array\splice.js133491123454759539 0
-124F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\favicon.42656662.png133496362687777011 0
+124F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\favicon.42656662.png133496380105193276 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\array\to-reversed.js133491123456035972 0
 141F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\actual\global-this.js133491123447774481 0
 147F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\core-js\features\array\to-sorted.js133491123456179916 0
@@ -8058,7 +8053,6 @@
 163F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@swc\helpers\cjs\_class_apply_descriptor_update.cjs133491092431192883 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\gamepad.js133491092437526398 0
 158F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\getcomputedstyle.js133491092437526398 0
-125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.b4ad9597.js.map133496375859391915 0
 163F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\@swc\helpers\src\_class_apply_descriptor_update.mjs133491092437366428 0
 164F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\getelementsbyclassname.js133491092437526398 0
 157F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\getrandomvalues.js133491092437526398 0
@@ -8149,7 +8143,6 @@
 164F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\passive-event-listener.js133491092438958832 0
 155F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\passwordrules.js133491092438958832 0
 160F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\permissions-policy.js133491092438958832 0
-122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.f7626f62.css133496346533866075 0
 160F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\picture-in-picture.js133491092438958832 0
 149F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\picture.js133491092438958832 0
 146F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\caniuse-lite\data\features\ping.js133491092438958832 0
@@ -9697,14 +9690,9 @@
 125F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\.bin\svgo.ps1133491092441668607 0
 139F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\.bin\update-browserslist-db133491092441668607 0
 143F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\node_modules\.bin\update-browserslist-db.cmd133491092441668607 0
-124F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\favicon.8b2f57bf.png133496346534037265 0
-122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\icons.dfd7a6db.svg133496346533835971 0
-121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.007a8815.js133496362687777011 0
-122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.628a78b8.css133496362687797065 0
-126F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.628a78b8.css.map133496362687797065 0
-126F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.f7626f62.css.map133496346533922031 0
-114F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.html133496375859341681 0
-129F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.runtime.1c29a0c7.js133496362687824626 0
-133F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.runtime.1c29a0c7.js.map133496362687824626 0
-133F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.runtime.f63cbf5c.js.map133496375859391915 0
-121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\logo.833dfef5.png133496362687838529 0
+122F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.628a78b8.css133496380109500691 0
+126F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.628a78b8.css.map133496380109592235 0
+121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.a9e7130c.js133496380109500691 0
+114F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.html133496380109500691 0
+129F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\index.runtime.847a6835.js133496380109500691 0
+121F:\Develop_tools\IdeaProjects\XmasJSCourse\js-course\complete-javascript-course\18-forkify\starter\dist\logo.833dfef5.png133496380106742633 0
