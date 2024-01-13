@@ -258,3 +258,10 @@ organize, maintainability, expandablity
 MVC architecture - Model (state,http library, business logic)
 controller(application logic, dispatch tasks to model and view), view (presentation logic)
 Separate business logic from application logic, making it clear
+
+Git: gitingore file used for ignoring unuse files
+git status, untracked, git add -A, git commit -m 'update',
+git reset --hard HEAD, git log, git reset -hard id,
+git branch, git branch new-Feature, git checkout new-Feature,
+git merge new-Feature
+// build small features in branch and merged it into the main version

@@ -84,6 +84,10 @@ const controlAddBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const newFeatures = function() {
+  console.log('zz');
+}
+
 const controlBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
 };
@@ -127,5 +131,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeatures();
 };
 init();
